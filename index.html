@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adnaan Ahmed Siddiqui's Resume</title>
+  <link rel="stylesheet" href="resume.css">
+ 
+ 
+ <script>
+  function searchContent() {
+    var searchText = document.getElementById("searchInput").value.toLowerCase(); // Get the search input and convert to lowercase for case-insensitive search
+    var contentDiv = document.getElementById("content");
+    var headings = contentDiv.querySelectorAll("h1, h2, h3, h4, h5, h6"); // Get all the headings to search through
+  
+    for (var i = 0; i < headings.length; i++) {
+        var headingText = headings[i].innerText.toLowerCase(); // Get the text of each heading and convert to lowercase
+  
+        if (headingText.includes(searchText)) { // Check if the heading text contains the search text
+            headings[i].scrollIntoView({ behavior: "smooth", block: "start" }); // Scroll to the found heading
+            break; // Stop after finding the first match
+        }
+    }
+  }
+  </script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+  <br>
+
+
+  <input type="text" id="searchInput" placeholder="Search...">
+  <button id="searchButton" onclick="searchContent()"><i class="fas fa-search"></i> Search</button>
+  <br> <br>
+
+
+  <div class="container" id="content">
+    <h1 class="text-center">Adnaan Ahmed Siddiqui's Resume</h1>
+    <!-- Add the resume details here -->
+    <img class="Adnaan" src="Images\Adnaan.jpg" alt="Adnaan.jpg"><br>
+
+
+    <div class="education">
+      <br> <br> <br>
+      <h1 id="education"><br>Education 🎒</h1>
+
+      <h3>B.Tech ISE(Information Science and Engineering) <br>
+        <h4> Presidency University, 2020-2024 </h4>
+      </h3>
+      <br>
+      <h3>Pre University <br>
+        <h4>St. Joseph's Pre University College , 2018-2020</h4>
+      </h3>
+      <br>
+      <h3>Schooling <br>
+        <h4>St. Joseph's Indian High School , 2015-2018</h4>
+      </h3>
+    </div>
+    <br> <br>
+    <hr>
+
+    <div class="skills"><br>
+      <h1 id="skills"><br>Skills 🤹‍♂️</h1>
+      <br>
+      <h4>Python</h4>
+      <h4>C</h4>
+      <h4>C++</h4>
+      <h4>HTML</h4>
+      <h4>My SQL</h4>
+      <h4>Machine Learning</h4>
+      <h4>Web Development</h4>
+      <h4>Quantum Computing</h4>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <div class="achievementsandawards">
+      <br>
+      <h1 id="ahievements and awards"><br>Achievements and Awards 🏆</h1>
+      <br>
+
+      <h4>Quantum Computing Club Head</h4>
+      <h4>Deep learning with NLP</h4>
+      <h4>Smart India Hackathon</h4>
+
+    </div>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <div class="personal_projects">
+      <h1 id="personal projects"><br>Personal Projects 👨‍💻</h1>
+      <br>
+      <h4> Weather App using Angular</h4>
+      <h4> Snake Game | using Python</h4>
+      <h4> Turtle Crossing Game | using Python</h4>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+
+    <div class="internships">
+      <br>
+      <h1 id="internships"><br>Internships 🏢</h1>
+      <br>
+      <h4> Organizational Benefits for Conversational AI </h4>
+      <h5> Research Intern at Chaoyang University Of Technology, Taichung, Taiwan </h5>
+    </div>
+
+    <br><br>
+    <hr>
+
+    <div class="research">
+      <br>
+      <h1 id="research"><br>Research 📖</h1>
+      <br>
+
+      <h4>Neural Network Model</h4>
+      <h4>Novyi Mir Research Journal, Volume 8, Issue 5, 2023</h4>
+    </div>
+    <br>
+    <br>
+    <hr>
+
+
+    <br>
+    <div class="languages">
+      <h1 id="languages"><br>Languages 🗣️</h1>
+      <br>
+      <h4>English <progress value="100" max="100"></progress> </h4>
+      <h4>Kannada <progress value="90" max="100"></progress></h4>
+      <h4>Hindi <progress value="90" max="100"></progress></h4>
+
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+
+    <div class="certificates">
+      <h1 id="certificates"><br>Certificates 🎗️</h1>
+      <br>
+      <div class="certificate-container">
+        <img class="certificate-image" src="certificates\0001.jpg" alt="Certificate Image">
+        <h4>The Fundamentals of Digital Marketing</h4>
+        <br>
+        <br>
+        <img class="certificate-image" src="Certificates\77-NMRJ4590 (1).JPG" alt="Certificate Image">
+        <h4>Certificate of Publication</h4>
+        <br>
+        <br>
+
+        <img class="certificate-image" src="Certificates\a47bb5de-62fd-4015-93a9-6aab64618923.jpg"
+          alt="Certificate Image">
+        <h4>Deep Learning with NLP</h4>
+        <br><br>
+
+        <img class="certificate-image" src="Certificates\UC-2f187d60-3fbf-4d4c-a855-09f5428b540a_page-0001.jpg"
+          alt="Certificate Image">
+        <h4>The Complete 2023 Web Development Bootcamp</h4>
+        <br><br>
+
+        <img class="certificate-image" src="Certificates\UC-38a1a7f2-c049-47aa-8e36-94a333b63edf_page-0001.jpg"
+          alt="Certificate Image">
+        <h4>Python for Datascience and Machine Learning Bootcamp</h4>
+        <br><br>
+
+
+        <img class="certificate-image" src="Certificates\unnamed.png" alt="Certificate Image">
+        <h4>Certificate of Attendance | AWS Builder's Online Series</h4>
+        <br><br>
+
+        <img class="certificate-image" src="Certificates\AWSome day.jpeg" alt="Certificate Image">
+        <h4>Certificate of Attendance | AWS OME Day Online Conference</h4>
+        <br><br>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <div class="interests">
+      <h1 id="interests"><br>Interests 🧩</h1><br>
+
+      <h4>YouTube</h4>
+      <h4>Video Editing</h4>
+      <h4>Tech</h4>
+      <h4>Gadgets</h4>
+    </div>
+    <br>
+    <br>
+
+    <div class="contact-me">
+      <h4 id="contact">Get In Touch</h4>
+      <h4>Adnaan Ahmed Siddiqui, Bangalore.</h4>
+      <h5>Please feel free to contact me through this Contact me page.</h5>
+      <br>
+      <br>
+      <a class="btn" href="mailto:biz1.adnaan@gmail.com">CONTACT ME</a>
+      <br>
+    </div>
+  </div>
+  <br>
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/adnaan-ahmed-siddiqui/">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/technoxityyt">Twitter</a>
+    <a class="footer-link" href="https://www.youtube.com/c/FactPointadnaan">Website</a>
+    <h6 class="copyright">© 2024 Adnaan Ahmed Siddiqui.</h6>
+  </div>
+
+</body>
+
+</html>
